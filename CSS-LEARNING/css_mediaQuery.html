@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Quere</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .boxes{
+            width: 448px;
+            height: 448px;
+            background-color: slateblue;
+            margin: 2px;
+            padding: 10px;
+            
+        }
+        .box{
+            display: flex;
+        }
+        @media only screen and (max-width:500px){
+            body{
+                background-color: pink;
+            }
+            .box{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, reprehenderit dicta molestiae perferendis ea,
+         ipsam modi minima praesentium quibusdam distinctio ab. Quae, velit quaerat deleniti voluptas reprehenderit autem incidunt.
+    </div>
+    <div class="box">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+</body>
+</html>

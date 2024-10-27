@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /* specificity of element selector is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* specificity of class selector is 10 */
+        .ok {
+            color: beige;
+        }
+
+        .no {
+            color: blue;
+        }
+
+        /* this is attribute selector */
+        [box-u=1] {
+            color: blue;
+        }
+
+        /* adding the specificity 10+1=11*/
+        h1.yes{
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="ok no yes" box-u:"1">hi my name is abhay</h1>
+</body>
+
+</html>
