@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @media only screen and (max-width:500px) {
+            
+        }
+        :root{
+            --color:green;
+            --seccolor:rgb(158, 29, 50);
+            --thcolor:rgb(103, 154, 186);
+        }
+    
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .my{
+            border: 2px solid black;
+            height: 50px;
+            position: sticky;
+            top: 0px;
+            background-color: var(--seccolor);
+            
+
+        }
+        .a1{
+            position: absolute;
+            border: 3px solid black;
+            /* margin: 0px; */
+            padding: 0;
+            width: 99vw;
+            height: 155vh;
+            background-color: var(--color);
+            display: inline-block;
+        }
+        .b2{
+         border: 2px solid black;
+         box-sizing: border-box;
+         margin: 25px;
+         padding: 55px;
+         height: 500px;
+         width: 45vw;
+         background-color: var(--thcolor);
+
+        }
+        .b2{
+            display: inline-block;
+        }
+        #q21{
+            background-color: blueviolet;
+        }
+        .b3{
+            border: 2px solid black;
+            margin:25px;
+            padding: 15px;
+            width: 909px;
+            box-sizing: border-box;
+            height: 255px;
+            border-radius: 25px;
+            position: relative;
+            left: 245px;
+            background-color: burlywood;
+            text-align: center;
+            font-size:  25px;;
+
+        }
+        /* img{
+            po
+            border-radius: 15px;
+            float: right;
+        } */
+      
+       .b4 img{
+        border-radius: 56px;
+       }
+       .cc{
+        border: 2px solid black;
+        margin: 3px;
+        padding: 15px;
+        box-sizing: border-box;
+        height: 25px;
+        background-color: white;
+        border-radius: 5px;
+        position: relative;
+        top: 95px;
+        /* z-index:0; */
+       }
+       .b4{
+        
+        position: fixed;
+      top: 579px;
+        left: 1300px;
+        z-index: 1;
+       }
+       
+    </style>
+</head>
+<body>
+   
+    <div class="a1">
+        <div class="my"></div>
+        <div class="b2"></div>
+        <div class="b2" id="q21"></div>
+        <div class="b3">
+            Welcome to Sigma Web Dev <br>
+            Hi myself Abhay Pratap Singh
+        </div>
+        <div class="b4">
+            <img src="boy.jpg" alt="boy" height="75px">
+        </div>
+        <div class="cc"></div>
+       
+    </div>
+    
+</body>
+</html>
