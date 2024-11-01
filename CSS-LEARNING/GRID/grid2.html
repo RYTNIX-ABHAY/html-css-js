@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRIDS</title>
+    <style>
+        .con {
+            border: 2px solid red;
+            /* display: flex; */
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                " side article article"
+                "footer footer footer";
+        }
+
+        .item {
+            border: 2px solid black;
+            height: 55px;
+            /* width: 55px; */
+        }
+
+        .i1 {
+            grid-area: nav;
+            background-color: red;
+        }
+
+        .i2 {
+            grid-area: side;
+            background-color: palegreen;
+        }
+
+        .i3 {
+            grid-area: footer;
+            background-color: blue;
+        }
+
+        .i4 {
+            grid-area: article;
+            background-color: aqua;
+        }
+/*   
+        .i5 {
+            grid-area: article;
+        } */
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="con">
+            <div class="item i1">1</div>
+            <div class="item i2">2</div>
+            <div class="item i3">3</div>
+            <div class="item i4">4</div>
+            <!-- <div class="item i5">5</div> -->
+        </div>
+    </main>
+</body>
+
+</html>
